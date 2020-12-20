@@ -35,11 +35,12 @@ var c = canvas.getContext('2d');
 // }
 
 
-let x = 200;
-let y = 200
-let dx = 8;
-let dy = 6;
+let x = Math.random() * innerHeight;
+let y = Math.random() * innerWidth;
+let dx = (Math.random() - 0.5) * 10;
+let dy = (Math.random() - 0.5) * 10;
 let radius = 30;
+
 function animate() {
     requestAnimationFrame(animate);
     c.clearRect(0, 0, innerWidth, innerHeight);
